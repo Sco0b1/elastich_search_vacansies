@@ -1,0 +1,19 @@
+/* Основной контейнер с двухколоночной компоновкой */
+.layoutContainer {
+    display: flex;
+    padding: 2rem;
+    background-color: #ffffff; /* Белый фон, как на сайте Canva */
+}
+
+/* Колонка с фильтрами (левая) */
+.filtersColumn {
+    flex: 0 0 300px; /* Фиксированная ширина для фильтров */
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Колонка с контентом (правая) */
+.contentColumn {
+    flex: 1; /* Занимает оставшееся пространство */
+}

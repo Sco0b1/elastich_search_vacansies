@@ -1,0 +1,54 @@
+/* Контейнер поиска */
+.searchContainer {
+    padding: 2rem;
+    text-align: center;
+    background-color: transparent; /* Прозрачный фон, как на сайте Canva */
+}
+
+/* Заголовок */
+.headerText {
+    font-size: 2.5rem; /* Крупный текст, как на сайте */
+    font-weight: 700;
+    color: #ffffff; /* Белый цвет, как на сайте Canva */
+    margin-bottom: 1.5rem;
+}
+
+/* Общий контейнер поля ввода и кнопки */
+.searchBox {
+    display: inline-flex; /* Inline-flex для компактного блока */
+    align-items: center;
+    background-color: #ffffff; /* Белый фон поля ввода */
+    border-radius: 0.375rem; /* Скругленные углы */
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px; /* Ограничение ширины для компактности */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Легкая тень для глубины */
+}
+
+/* Поле ввода */
+.searchInput {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+    color: #374151; /* Серый текст, как placeholder */
+}
+
+/* Кнопка поиска */
+.searchButton {
+    padding: 0.75rem 1rem;
+    background-color: transparent; /* Прозрачный фон, чтобы иконка была частью поля */
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Иконка поиска */
+.searchIcon {
+    width: 1.5rem;
+    height: 1.5rem;
+    color: #3b82f6; /* Яркий синий, как в дизайне Canva */
+}

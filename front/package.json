@@ -1,0 +1,32 @@
+{
+  "name": "diplom-ui",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "tw:init": "tailwindcss init -p"
+  },
+  "dependencies": {
+    "@elastic/react-search-ui": "^1.23.1",
+    "@elastic/react-search-ui-views": "^1.23.1",
+    "@elastic/search-ui-elasticsearch-connector": "^1.23.1",
+    "@tailwindcss/postcss": "^4.1.6",
+    "@tailwindcss/vite": "^4.1.6",
+    "next": "^15.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.6",
+    "@types/react": "18.2.27",
+    "@types/react-dom": "18.2.11",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6",
+    "typescript": "5.1.6"
+  }
+}

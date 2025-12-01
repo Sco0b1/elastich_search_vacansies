@@ -1,0 +1,85 @@
+@import "tailwindcss/preflight";
+@import "tailwindcss/utilities";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Убедимся, что body занимает всю высоту */
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff !important;
+  color: #333;
+  min-height: 100vh;
+}
+
+
+
+h1 {
+  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+.result-container {
+  display: grid  ;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.result-container ul {
+  display: contents ; /* Remove ul styling to let grid take over */
+}
+
+
+.job-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.06);
+}
+
+.filterRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+button {
+  transition: all 0.3s ease;
+}
+
+/* Стили для фасетов */
+.facet-container {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 1rem;
+  min-width: 200px;
+}
+
+.facet-title {
+  color: #1a1a1a;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+
+
+

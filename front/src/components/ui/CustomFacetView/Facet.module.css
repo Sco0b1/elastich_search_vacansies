@@ -1,0 +1,102 @@
+/* Контейнер фильтра */
+.facetContainer {
+    background-color: #ffffff; /* Белый фон */
+    border-radius: 0.375rem; /* Скругленные углы */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    overflow: hidden;
+    margin-bottom: 1rem; /* Отступ между фильтрами */
+}
+
+/* Заголовок фильтра */
+.facetTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a1a1a; /* Темный текст, как на сайте Canva */
+    padding: 0.75rem 1rem;
+    margin: 0;
+    cursor: default; /* Убираем курсор, так как больше не кликабельно */
+}
+
+/* Список опций */
+.facetOptionsList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 300px; /* Ограничение высоты с прокруткой, если много опций */
+    overflow-y: auto; /* Прокрутка при необходимости */
+}
+
+/* Поле поиска */
+.facetSearchInput {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    border: none;
+    border-bottom: 1px solid #e5e7eb; /* Легкая граница снизу */
+    outline: none;
+    color: #374151; /* Серый текст */
+}
+
+.facetSearchInput::placeholder {
+    color: #6b7280; /* Серый placeholder */
+}
+
+/* Опция фильтра */
+.facetOption {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.facetOption:hover {
+    background-color: #f3f4f6; /* Светло-серый фон при наведении */
+}
+
+/* Индикатор выбора */
+.facetOptionIndicator {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    border: 2px solid #d1d5db; /* Серая граница */
+    border-radius: 0.25rem;
+}
+
+/* Выбранная опция */
+.selected .facetOptionIndicator {
+    background-color: #3b82f6; /* Синий фон, как в дизайне Canva */
+    border-color: #3b82f6;
+}
+
+/* Название опции */
+.facetOptionLabel {
+    flex: 1;
+    font-size: 0.875rem;
+    color: #374151; /* Серый текст */
+}
+
+/* Количество */
+.facetOptionCount {
+    font-size: 0.875rem;
+    color: #6b7280; /* Серый текст */
+}
+
+/* Кнопка "Показать больше" */
+.showMoreButton {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    border: none;
+    text-align: left;
+    color: #3b82f6; /* Синий текст */
+    font-size: 0.875rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.showMoreButton:hover {
+    background-color: #f3f4f6; /* Светло-серый фон при наведении */
+}
+
