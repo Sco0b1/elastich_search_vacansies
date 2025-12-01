@@ -1,0 +1,4 @@
+elasticsearch>=8.0.0
+sentence-transformers>=2.2.2
+tqdm
+requests

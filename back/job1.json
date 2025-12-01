@@ -1,0 +1,7 @@
+{
+  "job_id": "1",
+  "title":       "Python Developer",
+  "description": "Разработка бэка на Python",
+  "company":     "ACME",
+  "remote_type": "remote"
+}

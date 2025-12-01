@@ -1,0 +1,23 @@
+{
+  "mappings": {
+    "properties": {
+      "title":       { "type": "text", "analyzer": "english" },
+      "description": { "type": "text", "analyzer": "english" },
+      "company":     { "type": "keyword" },
+      "location": { "type": "keyword" },
+      "experience_level": { "type": "keyword" },
+      "job_type":  { "type": "keyword" },
+      "salary": {
+        "type": "keyword",
+        "ignore_above": 256
+      },
+
+      "job_embedding": {
+        "type":   "dense_vector",
+        "dims":   384,
+        "index":  true,
+        "similarity": "cosine"
+      }
+    }
+  }
+}
